@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stridegiv</title>
+    <link rel="stylesheet" href="style.css"> <!-- Just link the stylesheet-->
 </head>
 <body>
+<body>
+
+  <header class="site-header">  <!-- just a semantic landmark for the top of the page-->
+    <nav class="navbar" aria-label="Main"> <!-- used aria lable to name it main since we will have another nav section to non-reader be able to know where they are-->
+      <a href="#hero" class="logo">Stride</a> <!-- added a logo presented as a link also to it jumps to elements with the id hero-->
+      <ul class="nav-links"> <!-- simple unordered list with its link (already done in older assignments)-->
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page"> <!-- this is the main landmark holding the page content-->
+
+    <section class="hero" id="hero">
+    </section>
+
+    <section class="features" id="features">
+    </section>
+
+    <section class="steps" id="how">
+    </section>
+
+    <section class="pricing" id="pricing">
+    </section>
+
+    <section class="faq" id="faq">
+    </section>
+
+    <section class="signup" id="signup">
+    </section>
+    <!-- all of them are the same idea added a class to be able to design them independatly and id as a jump target like before-->
+  </main>
+
+  <footer class="site-footer"> <!-- buttom of the page same as old assignment too -->
+  </footer>
+
+</body>
     
 </body>
 </html>
