@@ -162,16 +162,69 @@
   </div>
 </section>
 
-    <section class="faq" id="faq">
-    </section>
+<section class="faq" id="faq">
+  <div class="section-heading">
+    <h2>Questions</h2>
+    <p>The things people ask us most.</p>
+  </div>
+  <dl class="faq-list"> <!-- here is the only thing new that i havent used or explained before which is the description list it has 3 parts
+    dl initialize it dt which mean the term and dd the description of the term-->
+    <div class="faq-item">
+      <dt>Is Stride really free?</dt>
+      <dd>Yes. The Free plan has no time limit. You only pay if you want Plus or Yearly.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>What kind of goals can I set?</dt>
+      <dd>Anything you can turn into a habit: exercise, reading, studying, sleep, saving money and more.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>What happens if I miss a day?</dt>
+      <dd>Nothing bad. Your coach adjusts the plan and helps you get back on track the next day.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>Can I cancel anytime?</dt>
+      <dd>Yes. You can cancel from your settings in one click.</dd>
+    </div>
+  </dl>
+</section>
 
-    <section class="signup" id="signup">
-    </section>
-    <!-- all of them are the same idea added a class to be able to design them independatly and id as a jump target like before-->
+<section class="signup" id="signup"> <!-- here also nothing new is used just text headings input labels all old stuff with textarea one time which means can input many lines
+    and a button typed submit also used before-->
+  <div class="section-heading">
+    <h2>Join the waitlist</h2>
+    <p>Leave your details and we will email you when Stride launches.</p>
+  </div>
+  <form class="signup-form" action="#signup" method="get">
+    <p class="form-note"><span class="required-mark">*</span> Required field</p>
+    <div class="form-field">
+      <label for="name">Name <span class="required-mark">*</span></label>
+      <input id="name" name="name" type="text" required>
+    </div>
+    <div class="form-field">
+      <label for="email">Email <span class="required-mark">*</span></label>
+      <input id="email" name="email" type="email" required>
+    </div>
+    <div class="form-field">
+      <label for="goal">What goal do you want help with?</label>
+      <textarea id="goal" name="goal"></textarea>
+    </div>
+    <button type="submit" class="button button--primary">Join the waitlist</button>
+  </form>
+</section>
   </main>
 
-  <footer class="site-footer"> <!-- buttom of the page same as old assignment too -->
-  </footer>
+ <footer class="site-footer"> <!-- added somestuff to the foother so it doesnt look empty and i will design it later on-->
+  <p class="logo">Stride</p>
+  <nav aria-label="Footer">
+    <ul class="footer-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#signup">Join</a></li>
+    </ul>
+  </nav>
+  <p class="copyright">&copy; 2026 Stride. A fictional product made for a class project.</p>
+</footer>
 
 </body>
     
