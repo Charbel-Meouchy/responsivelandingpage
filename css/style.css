@@ -1,4 +1,6 @@
-:root { /* the top of the doc , variable declared here can be used by every rule in the file */
+:root { /* the top of the doc , variable declared here can be used by every rule in the file , i fined this soo useful since 
+    it was a pain to enter evrything the same everytime remembering exact colors and stuff now its not easy and we will be sure we
+    will get same result*/
   --surface: #0d1117; /* jsut coloring the back using in chap 6 custom props that start with 2 -- */
   --text: #e6edf3; /* the body text color*/
   --brand: #58a6ff; /* here just the link and button with the cards*/
@@ -26,4 +28,46 @@
 
   --radius: 10px; /*for the corner of the cards something that i just learned i didnt know about it */
   --speed: 200ms; /* speed like u mentioned in class shouldn't be slow so it doesnt feel laggy and not too too fast so a good between is clean*/
+}
+
+* {
+  box-sizing: border-box; /*this so the padding and margin is included already done in old assignment*/
+}
+/*below is nothing new just normal design for fonts sizing colors which we already defined everything in root*/
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--text);
+  background: var(--surface);
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-heading);
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--brand);
 }
