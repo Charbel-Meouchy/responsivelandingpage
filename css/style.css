@@ -115,3 +115,37 @@ a {
   grid-area: signup;
   min-width: 0;
 }
+/*nothing here is new all one before just basic designing*/
+.site-header {
+  padding: var(--sp-2);
+  border-bottom: 1px solid var(--brand);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /*since i picked the direction to be column so the main azxix is vertical now align-items hit the horizontal one
+  which is the cross axix and flex-start means the beginning*/
+  gap: var(--sp-2);
+}
+
+.logo {
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none; /*also used in last assignment to remove the line underneath the link*/
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap; /*this line prevent long content when shrinking to overflow so now it can go back to a new line*/
+  gap: var(--sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+}
