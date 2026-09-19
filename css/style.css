@@ -277,3 +277,207 @@ td {
   font-weight: 700;
   color: var(--brand);
 }
+
+.plan-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.plan-card {
+  flex: 1 1 320px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-3);
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+}
+
+.plan-card--popular {
+  border-color: var(--success);
+}
+
+.plan-badge {
+  align-self: flex-start;
+  padding: 0 var(--sp-1);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--surface);
+  background: var(--success);
+  border-radius: var(--radius);
+}
+
+.price {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+}
+
+.plan-list {
+  flex-grow: 1;
+  margin: 0;
+  padding-left: var(--sp-3);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin: 0;
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  padding: var(--sp-3);
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.form-note {
+  font-size: var(--fs-small);
+}
+
+.required-mark {
+  color: var(--danger);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: var(--sp-1);
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+}
+
+textarea {
+  height: 8rem;
+}
+
+.signup-form .button {
+  align-self: flex-start; /*this is ther first time i used it in this code it overrides to old design of it because i used align-self so now its flex-start*/
+}
+/*also nothing you and a consistent clean design because of the root at the top of the page which helped me keep my design on point*/
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  padding: var(--sp-4) var(--sp-2);
+  border-top: 1px solid var(--brand);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: var(--fs-small);
+}
+/*here 600 px as a minimum width mean everythign 600 and up as a breaking point so everything insided apllies to the range 600 and up so with more room
+the sides get double the size matching the page padding below*/
+@media (min-width: 600px) {
+  .site-header {
+    padding: var(--sp-2) var(--sp-4);
+  }
+/*the logo and linked stop being stakced and now they are side by side on larger devices*/
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between; /*here the main axix horizontal this is the typical navbar design  mentioned in my slides*/
+    align-items: center;
+  }
+/*more padding because of more room*/
+  .page {
+    padding: var(--sp-5) var(--sp-4);
+  }
+/*same for the footer that goes now side by side*/
+  .site-footer {
+    flex-direction: row;
+    flex-wrap: wrap; /*i guess its mentioned before if it ddoesnt fit on the sam eline it drops to the next one*/
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--sp-4);
+  }
+}
+/*when we say min-wisth now it for devices 1024 and bigger so now we talking desktop size not ipad or phone since in my slide 0 to 599 typical phone
+600 to 1023 tyoical ipad and 1024+ for desktop so i stuck to them to test if i will need to change or keep them since i might need to change a abit in them*/
+@media (min-width: 1024px) {
+  :root { /*i onlyy changed h1 to make it better since it look really small on pc with the old size that i designed for phones*/
+    --fs-h1: 2.5rem;
+  }
+
+  .site-header {
+    padding: var(--sp-2) var(--sp-5); /*wider padding even more than the padding i added for ipad */
+  }
+
+  .page {
+    grid-template-columns: 1fr 1fr; /*now 2 columns split equally accross the page */
+    grid-template-areas: /*a entire new map for desktop so i had to change the entire layout od the page and rewrite eveything and like i said before
+    repeating the same thing twice merge them into one*/
+      'hero hero'
+      'features features'
+      'steps steps'
+      'pricing pricing'
+      'faq signup';
+    padding: var(--sp-6) var(--sp-5); /*added padding fromall 4 sides to look cleaner and have more room*/
+  }
+
+  .hero {
+    flex-direction: row; /*now the hero text and daily plan cards are side by side*/
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 1 1 0; /*shorthand for grow shrink and basis same as flex: 1 so since i put both hero items at 1 1 0 they split the space exactly in half*/
+    min-width: 0; /*same reason as explained before */
+  }
+
+  .hero-card {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .site-footer {
+    padding: var(--sp-4) var(--sp-5); /*just did this to match the header and page since it looked off without matching them now thet look like 1 big part together*/
+  }
+}
