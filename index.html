@@ -22,7 +22,7 @@
   </header>
 
   <main class="page"> <!-- this is the main landmark holding the page content-->
-
+ <!-- i know in all of those i could have used the combinator > and + but i decided to go for classes since i am not used to them they are tricking me-->
     <section class="hero" id="hero">
       <div class="hero-text"> <!--just giving it class to design later-->
         <h1>Your AI coach for goals that actually stick</h1>  <!--h1 and p just number 1 heading and paragrpah-->
@@ -97,11 +97,70 @@
       </div>
     </section>
 
-    <section class="steps" id="how">
-    </section>
+<section class="steps" id="how">
+  <div class="section-heading">
+    <h2>How it works</h2>
+    <p>Get started in three simple steps.</p>
+  </div>
+  <ol class="step-list"> <!-- here i used ordered list which has the same systeme and the ul used above just the difference here is that its numbered
+    and the rest there is nothing new just heading and paragraphes devided into classes for design-->
+    <li class="step-card">
+      <span class="step-number">Step 1</span>
+      <h3>Set your goal</h3>
+      <p>Tell Stride what you want to achieve, like running 5 km or reading 12 books this year.</p>
+    </li>
+    <li class="step-card">
+      <span class="step-number">Step 2</span>
+      <h3>Get your plan</h3>
+      <p>Stride builds a weekly plan of small habits that fit your schedule.</p>
+    </li>
+    <li class="step-card">
+      <span class="step-number">Step 3</span>
+      <h3>Check in daily</h3>
+      <p>Chat with your coach each day, mark habits as done, and watch your streak grow.</p>
+    </li>
+  </ol>
+</section>
 
-    <section class="pricing" id="pricing">
-    </section>
+<section class="pricing" id="pricing"> <!--in this sectin i didnt use anything new i havent used and explained before-->
+  <div class="section-heading">
+    <h2>Simple pricing</h2>
+    <p>Start free. Upgrade when you want more coaching.</p>
+  </div>
+  <div class="plan-row">
+    <div class="plan-card">
+      <h3>Free</h3>
+      <p class="price">$0 / month</p>
+      <ul class="plan-list">
+        <li>1 active goal</li>
+        <li>Daily check-ins</li>
+        <li>Basic streaks</li>
+      </ul>
+      <a href="#signup" class="button button--secondary">Start free</a>
+    </div>
+    <div class="plan-card plan-card--popular">
+      <p class="plan-badge">Most popular</p>
+      <h3>Plus</h3>
+      <p class="price">$6 / month</p>
+      <ul class="plan-list">
+        <li>Unlimited goals</li>
+        <li>Adaptive plans</li>
+        <li>Weekly review</li>
+      </ul>
+      <a href="#signup" class="button button--primary">Try Plus</a>
+    </div>
+    <div class="plan-card">
+      <h3>Yearly</h3>
+      <p class="price">$50 / year</p>
+      <ul class="plan-list">
+        <li>Everything in Plus</li>
+        <li>2 months free</li>
+        <li>Priority support</li>
+      </ul>
+      <a href="#signup" class="button button--secondary">Go yearly</a>
+    </div>
+  </div>
+</section>
 
     <section class="faq" id="faq">
     </section>
