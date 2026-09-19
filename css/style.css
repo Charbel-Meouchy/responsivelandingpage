@@ -71,3 +71,47 @@ p {
 a {
   color: var(--brand);
 }
+
+.page {
+  display: grid; /*turned it into a grid container and its direct children so all the sections will become grid items*/
+  grid-template-columns: 1fr; /*1 column will tkae the entire width of the page*/
+  grid-template-areas: /*here each string is a row with one cell if 2 were the same they would merge*/
+    'hero'
+    'features'
+    'steps'
+    'pricing'
+    'faq'
+    'signup';
+  gap: var(--sp-5);
+  padding: var(--sp-5) var(--sp-2);
+}
+
+.hero {
+  grid-area: hero; /*since its a children we can place it directly in the hero region*/
+  min-width: 0; /*set to 0 since the defalt is auto which cause long content to be wider than the column and overflow setting it to 0 shrink it to fit*/
+}
+
+.features {
+  grid-area: features; /*same here as hero*/
+  min-width: 0;
+}
+/*did the same for all the rest of the childrens*/
+.steps {
+  grid-area: steps;
+  min-width: 0;
+}
+
+.pricing {
+  grid-area: pricing;
+  min-width: 0;
+}
+
+.faq {
+  grid-area: faq;
+  min-width: 0;
+}
+
+.signup {
+  grid-area: signup;
+  min-width: 0;
+}
