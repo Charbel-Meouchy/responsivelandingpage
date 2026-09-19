@@ -149,3 +149,81 @@ a {
   color: var(--text);
   text-decoration: none;
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.button { /*evrything before was already done before with its explanation here we have something new which is the designing of the border of the button*/
+  padding: var(--sp-1) var(--sp-3);
+  border: 2px solid var(--brand);
+  border-radius: var(--radius); /*and here the rounded corners of them for a more proffesional look*/
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button--primary {
+  background: var(--brand);
+  color: var(--surface);
+}
+
+.button--secondary {
+  background: var(--surface);
+  color: var(--brand);
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-3);
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+}
+
+.hero-card h2 {
+  font-size: var(--fs-h3);
+}
+
+table {
+  width: 100%; /*that means the table fills the card's width and % is relative to the size like mentioned in chapter 3 so its adapts alone*/
+  border-collapse: collapse; /*this one we didnt do in class but what is does is that it merges the cell borders into single lines so no more gaps between them*/
+  font-size: var(--fs-small);
+}
+
+th {
+  padding: var(--sp-1);
+  border-bottom: 1px solid var(--brand);
+  text-align: left;
+}
+
+td {
+  padding: var(--sp-1);
+}
+
+.status-done {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.coach-tip {
+  font-size: var(--fs-small);
+}
