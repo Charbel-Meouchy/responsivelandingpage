@@ -1,0 +1,29 @@
+:root { /* the top of the doc , variable declared here can be used by every rule in the file */
+  --surface: #0d1117; /* jsut coloring the back using in chap 6 custom props that start with 2 -- */
+  --text: #e6edf3; /* the body text color*/
+  --brand: #58a6ff; /* here just the link and button with the cards*/
+  --success: #3fb950; /* 2 of th eplans*/
+  --danger: #ff7b72; /* all errors and warning fir the required fields in form the one u cant skip without filling them*/
+ /* fot hose i used the recommened gaps everywhere from session 6 (8 16 ... till 64) and used rlative units like recommended*/
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-5: 3rem;
+  --sp-6: 4rem;
+
+  --font: system-ui, sans-serif; /* like before adding a fallback font in case of not or delayed loading*/
+  /* reagrding those since mobile first should be fone the main head on phone is 32px so we will start small and grow as space allows*/
+  --fs-h1: 2rem;
+  --fs-h2: 1.75rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1.125rem;
+  --fs-small: 0.875rem;
+ /* recommendedd line height in our chapter that recommends a range for everypart*/
+  --lh-tight: 1.15;
+  --lh-heading: 1.25;
+  --lh-body: 1.5;
+
+  --radius: 10px; /*for the corner of the cards something that i just learned i didnt know about it */
+  --speed: 200ms; /* speed like u mentioned in class shouldn't be slow so it doesnt feel laggy and not too too fast so a good between is clean*/
+}
