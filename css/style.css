@@ -414,6 +414,27 @@ textarea {
 .copyright {
   font-size: var(--fs-small);
 }
+
+.logo,
+.nav-links a,
+.footer-links a {
+  transition: color var(--speed) ease-out;
+}
+
+.navbar .logo:hover,
+.nav-links a:hover,
+.footer-links a:hover {
+  color: var(--brand);
+}
+
+.button {
+  transition: transform var(--speed) ease-out;
+}
+
+.button:hover {
+  transform: scale(1.04);
+}
+
 /*here 600 px as a minimum width mean everythign 600 and up as a breaking point so everything insided apllies to the range 600 and up so with more room
 the sides get double the size matching the page padding below*/
 @media (min-width: 600px) {
