@@ -31,7 +31,7 @@
   --radius: 6px; /*for the corner of the cards something that i just learned i didnt know about it */
   --speed: 200ms; /* speed like u mentioned in class shouldn't be slow so it doesnt feel laggy and not too too fast so a good between is clean*/
 }
-
+/*Note like the last assignment i explained each thing once if its repeated i dont re-explain it again */
 * {
   box-sizing: border-box; /*this so the padding and margin is included already done in old assignment*/
 }
