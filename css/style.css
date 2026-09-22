@@ -1,11 +1,13 @@
 :root { /* the top of the doc , variable declared here can be used by every rule in the file , i fined this soo useful since 
     it was a pain to enter evrything the same everytime remembering exact colors and stuff now its not easy and we will be sure we
     will get same result*/
-  --surface: #0d1117; /* jsut coloring the back using in chap 6 custom props that start with 2 -- */
-  --text: #e6edf3; /* the body text color*/
-  --brand: #58a6ff; /* here just the link and button with the cards*/
-  --success: #3fb950; /* 2 of th eplans*/
-  --danger: #ff7b72; /* all errors and warning fir the required fields in form the one u cant skip without filling them*/
+  --surface: #ffffff; /* jsut coloring the back using in chap 6 custom props that start with 2 -- */
+  --text: #1f2a37; /* the body text color*/
+  --brand: #2563a8; /* here just the link and button with the cards*/
+  --success: #276749; /* 2 of th eplans*/
+  --danger: #c53030; /* all errors and warning fir the required fields in form the one u cant skip without filling them*/
+  --surface-soft: #eaf3fc;
+  --border: #cfe0f2;
  /* fot hose i used the recommened gaps everywhere from session 6 (8 16 ... till 64) and used rlative units like recommended*/
   --sp-1: 0.5rem;
   --sp-2: 1rem;
@@ -26,7 +28,7 @@
   --lh-heading: 1.25;
   --lh-body: 1.5;
 
-  --radius: 10px; /*for the corner of the cards something that i just learned i didnt know about it */
+  --radius: 6px; /*for the corner of the cards something that i just learned i didnt know about it */
   --speed: 200ms; /* speed like u mentioned in class shouldn't be slow so it doesnt feel laggy and not too too fast so a good between is clean*/
 }
 
@@ -118,7 +120,7 @@ a {
 /*nothing here is new all one before just basic designing*/
 .site-header {
   padding: var(--sp-2);
-  border-bottom: 1px solid var(--brand);
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar {
@@ -195,7 +197,7 @@ a {
   flex-direction: column;
   gap: var(--sp-2);
   padding: var(--sp-3);
-  border: 1px solid var(--brand);
+  background: var(--surface-soft);
   border-radius: var(--radius);
 }
 
@@ -211,7 +213,7 @@ table {
 
 th {
   padding: var(--sp-1);
-  border-bottom: 1px solid var(--brand);
+  border-bottom: 1px solid var(--border);
   text-align: left;
 }
 
@@ -248,7 +250,7 @@ td {
   flex-direction: column;
   gap: var(--sp-1);
   padding: var(--sp-3);
-  border: 1px solid var(--brand);
+  background: var(--surface-soft);
   border-radius: var(--radius);
 }
 
@@ -268,7 +270,7 @@ td {
   flex-direction: column;
   gap: var(--sp-1);
   padding: var(--sp-3);
-  border: 1px solid var(--brand);
+  background: var(--surface-soft);
   border-radius: var(--radius);
 }
 
@@ -291,12 +293,13 @@ td {
   flex-direction: column;
   gap: var(--sp-2);
   padding: var(--sp-3);
-  border: 1px solid var(--brand);
+  background: var(--surface-soft);
+  border: 2px solid var(--surface-soft);
   border-radius: var(--radius);
 }
 
 .plan-card--popular {
-  border-color: var(--success);
+  border-color: var(--brand);
 }
 
 .plan-badge {
@@ -332,7 +335,7 @@ td {
   flex-direction: column;
   gap: var(--sp-1);
   padding: var(--sp-3);
-  border: 1px solid var(--brand);
+  background: var(--surface-soft);
   border-radius: var(--radius);
 }
 
@@ -376,7 +379,7 @@ textarea {
   font-size: var(--fs-body);
   color: var(--text);
   background: var(--surface);
-  border: 1px solid var(--brand);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
 }
 
@@ -394,7 +397,7 @@ textarea {
   align-items: flex-start;
   gap: var(--sp-2);
   padding: var(--sp-4) var(--sp-2);
-  border-top: 1px solid var(--brand);
+  background: var(--surface-soft);
 }
 
 .footer-links {
