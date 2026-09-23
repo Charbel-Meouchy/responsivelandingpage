@@ -31,7 +31,7 @@
   --radius: 6px; /*for the corner of the cards something that i just learned i didnt know about it */
   --speed: 200ms; /* speed like u mentioned in class shouldn't be slow so it doesnt feel laggy and not too too fast so a good between is clean*/
 }
-/*Note like the last assignment i explained each thing once if its repeated i dont re-explain it again */
+
 * {
   box-sizing: border-box; /*this so the padding and margin is included already done in old assignment*/
 }
@@ -46,10 +46,10 @@ body {
 }
 
 h1 {
-  margin: 0;
-  font-size: var(--fs-h1);
+  margin: 0; /* removing the margin completely (the space between it and other elems*/
+  font-size: var(--fs-h1); /* the size of the font*/
   line-height: var(--lh-tight);
-  font-weight: 700;
+  font-weight: 700; /*determine how bold the font is*/
 }
 
 h2 {
@@ -80,6 +80,7 @@ a {
   grid-template-areas: /*here each string is a row with one cell if 2 were the same they would merge*/
     'hero'
     'features'
+    'showcase'
     'steps'
     'pricing'
     'faq'
@@ -117,6 +118,11 @@ a {
   grid-area: signup;
   min-width: 0;
 }
+
+.showcase {
+  grid-area: showcase;
+  min-width: 0;
+}
 /*nothing here is new all one before just basic designing*/
 .site-header {
   padding: var(--sp-2);
@@ -139,7 +145,7 @@ a {
 }
 
 .nav-links {
-  display: flex;
+  display: flex; /* creating flex container*/
   flex-wrap: wrap; /*this line prevent long content when shrinking to overflow so now it can go back to a new line*/
   gap: var(--sp-2);
   margin: 0;
@@ -194,7 +200,7 @@ a {
 
 .hero-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*making the main axix the vertical one*/
   gap: var(--sp-2);
   padding: var(--sp-3);
   background: var(--surface-soft);
@@ -213,7 +219,7 @@ table {
 
 th {
   padding: var(--sp-1);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); /* only the bottom size the first is thickness  ,second i continous straight line , 3rd is color*/
   text-align: left;
 }
 
@@ -252,6 +258,26 @@ td {
   padding: var(--sp-3);
   background: var(--surface-soft);
   border-radius: var(--radius);
+}
+
+.app-shot {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin: 0;
+  padding: var(--sp-3);
+  background: var(--surface-soft);
+  border-radius: var(--radius);
+}
+
+.app-shot img {
+  width: 100%; /* make the image 100% of the width*/
+  height: auto; /* keep the image optimal size doesnt strech it and stuff*/
+  border-radius: var(--radius); /*just roudning the corners like we did with the cards*/
+}
+
+figcaption {
+  font-size: var(--fs-small);
 }
 
 .step-list {
@@ -480,6 +506,7 @@ the sides get double the size matching the page padding below*/
     repeating the same thing twice merge them into one*/
       'hero hero'
       'features features'
+      'showcase showcase'
       'steps steps'
       'pricing pricing'
       'faq signup';
