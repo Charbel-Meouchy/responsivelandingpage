@@ -290,7 +290,7 @@ figcaption {
 }
 
 .step-card {
-  flex: 1 1 320px;
+  flex: 1 1 480px;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -313,7 +313,7 @@ figcaption {
 }
 
 .plan-card {
-  flex: 1 1 320px;
+  flex: 1 1 480px;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -506,8 +506,7 @@ the sides get double the size matching the page padding below*/
     repeating the same thing twice merge them into one*/
       'hero hero'
       'features features'
-      'showcase showcase'
-      'steps steps'
+      'showcase steps'
       'pricing pricing'
       'faq signup';
     padding: var(--sp-6) var(--sp-5); /*added padding fromall 4 sides to look cleaner and have more room*/
@@ -526,6 +525,10 @@ the sides get double the size matching the page padding below*/
   .hero-card {
     flex: 1 1 0;
     min-width: 0;
+  }
+
+  .plan-card {
+    flex: 1 1 0;
   }
 
   .site-footer {
